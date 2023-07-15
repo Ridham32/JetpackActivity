@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">JetpackActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tvSecondFrag">Second Fragment</string>
+    <string name="tvFirstFrag">First Fragment</string>
+    <string name="btnfirst">First</string>
+    <string name="back">Back</string>
+    <string name="tvThirdFrag">THIRD FRAGMENT</string>
+    <string name="goto2ndfragment">GO BACK</string>
+    <string name="goTo3rd">Go TO 3rd Fragment</string>
+    <string name="EnterYourName">ENTER YOUR NAME</string>
+    <string name="idno">Id No.</string>
+    <string name="gotofirst">Go BAck To 1st Fragment</string>
+    <string name="gotomain">MAIN SCREEN</string>
+</resources>
