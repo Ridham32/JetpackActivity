@@ -45,7 +45,8 @@ class FirstFragment : Fragment() {
         btnfirst.setOnClickListener {
           //  findNavController().navigate(R.id.secondFragment)
             //as all the tasks are now in the action
-            findNavController().navigate(R.id.action_firstFragment_to_secondFragment)
+            var bundle = Bundle()
+            findNavController().navigate(R.id.action_firstFragment_to_secondFragment, bundle)
         }
     }
 

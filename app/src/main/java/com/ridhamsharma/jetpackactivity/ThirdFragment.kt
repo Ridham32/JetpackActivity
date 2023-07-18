@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 import androidx.navigation.fragment.findNavController
 
 // TODO: Rename parameter arguments, choose names that match
@@ -24,6 +25,8 @@ class ThirdFragment : Fragment() {
     private var param2: String? = null
     lateinit var btn3rdBack: Button
     lateinit var btnBackToFirst:Button
+    var tvname3rd: TextView?=null
+    var tvrollno3rd: TextView?=null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -44,12 +47,17 @@ class ThirdFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         btn3rdBack= view.findViewById(R.id.btn3rdBack)
         btnBackToFirst=view.findViewById(R.id.btnBackToFirst)
+        tvname3rd=view.findViewById(R.id.tvname3rd)
+        tvname3rd?.setText("name")
+        tvrollno3rd=view.findViewById((R.id.tvrollno3rd))
+        tvrollno3rd?.setText("rollno".toString())
         btn3rdBack.setOnClickListener {
             findNavController().popBackStack() //take to second fragment
         }
         btnBackToFirst.setOnClickListener {
             findNavController().popBackStack(R.id.firstFragment, true)
         }
+
 
     }
 

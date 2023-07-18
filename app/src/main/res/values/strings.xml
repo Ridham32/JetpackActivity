@@ -10,7 +10,7 @@
     <string name="goto2ndfragment">GO BACK</string>
     <string name="goTo3rd">Go TO 3rd Fragment</string>
     <string name="EnterYourName">ENTER YOUR NAME</string>
-    <string name="idno">Id No.</string>
+    <string name="rollno">Roll No.</string>
     <string name="gotofirst">Go BAck To 1st Fragment</string>
     <string name="gotomain">MAIN SCREEN</string>
 </resources>

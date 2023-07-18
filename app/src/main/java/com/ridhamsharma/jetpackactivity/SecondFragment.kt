@@ -26,17 +26,12 @@ class SecondFragment : Fragment() {
     private var param2: String? = null
     lateinit var btn2back:Button
     lateinit var btngoTo3rd:Button
-    var bundle = Bundle()
     var etName: EditText?=null
     var etRollno: EditText?=  null
     var name = ""
     var rollno=0
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-
     }
 
     override fun onCreateView(
@@ -46,28 +41,23 @@ class SecondFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_second, container, false)
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
+            name=it.getString("name")?:""
+            rollno=it.getInt("rollno",0)
         }
         btngoTo3rd=view.findViewById(R.id.btngoTo3rd)
         btn2back=view.findViewById(R.id.btn2back)
         btn2back.setOnClickListener {
             findNavController().popBackStack()  //take back to first fragment
         }
-
         btngoTo3rd.setOnClickListener {
-
             findNavController().navigate(R.id.action_secondFragment_to_thirdFragment)
         }
-
-
     }
-
-
 
     companion object {
         /**
